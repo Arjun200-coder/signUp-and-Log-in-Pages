@@ -5,16 +5,17 @@ import {
   AboutUsPage, LoginPage, RegisterPage, ResetPasswordPage, ForgetPasswordPage
 } from './pages/About Us';
 
-import { AuthLayoutPage, ProductLayoutPage, PublicLayoutPage } from './layout';
+import { AuthLayoutPage, ProductLayoutPage, PublicLayoutPage } from './layout/AuthLayout';
 
 function AppRoutes() {
   return (
     <Suspense fallback={<div className="text-black">loading...</div>}>
       <Routes>
-        <Route path="auth" element={<AuthLayoutPage />}>
-          <Route path="login" element={<LoginPage />} />
-          <Route path="register" element={<RegisterPage />} />
-          <Route path="forgot-password" element={<ForgetPasswordPage />} />
+        <Route element={<PublicLayoutPage />}>
+          <Route path="Login" element={<LoginPage />} />
+          <Route path="Register" element={<RegisterPage />} />
+          <Route path="Forgot-password" element={<ForgetPasswordPage />} />
+          <Route path="Reset-password" element={<ResetPasswordPage />} />
         </Route>
 
         <Route element={<PublicLayoutPage />}>

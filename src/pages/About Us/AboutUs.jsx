@@ -13,7 +13,7 @@ function AboutUsPage() {
         />
         <div>
           <h2 className="text-xl font-semibold text-indigo-700 mb-2">
-            Allu Arjun....
+            Arjun Dhiman
           </h2>
           <p className="text-gray-600">
             Hello! I'm a passionate web developer with expertise in creating modern, responsive apps using React and Tailwind CSS. I enjoy solving problems, building user-friendly interfaces, and continuously learning new technologies.

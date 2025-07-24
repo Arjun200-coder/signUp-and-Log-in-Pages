@@ -50,9 +50,28 @@ function PublicLayoutPage() {
         <Outlet />
       </main>
 
-      <footer className="bg-gray-100 text-center py-4 text-sm text-gray-600 border-t">
+      {/* <footer className="bg-gray-100 text-center py-4 text-sm text-gray-600 border-t">
         © 2025 MyStore. All rights reserved.
-      </footer>
+      </footer> */}
+
+      <footer className="bg-gray-200 py-4">
+              <div className="max-w-5xl mx-auto px-4">
+                <ul className="flex flex-wrap justify-center gap-6 text-gray-600 text-sm ">
+                  <li>
+                    <NavLink to="Login" className="hover:text-blue-500 hover:underline">Log In</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/register" className="hover:text-blue-500 hover:underline">Register Now</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/forgot-password" className="hover:text-blue-500 hover:underline">Forgot Password</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/reset-password" className="hover:text-blue-500 hover:underline">Reset Password</NavLink>
+                  </li>
+                </ul>
+              </div>
+            </footer>
     </div>
   );
 }
