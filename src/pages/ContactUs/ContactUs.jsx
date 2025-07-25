@@ -1,9 +1,9 @@
-import React from 'react'
+import styles from './styles.module.css';
 
 function ContactUsPage() {
   return (
     <>
-    <div className="max-w-xl mx-auto py-10">
+    <div className={`${styles.ContactUsPage} max-w-xl mx-auto py-10`}>
       <h2 className="text-3xl font-semibold text-blue-600 mb-6">Contact Us</h2>
       <form className="space-y-4">
         <input type="text" placeholder="Name" className="w-full p-3 border rounded" />
@@ -14,6 +14,6 @@ function ContactUsPage() {
     </div>
     </>
   )
-}
+};
 
 export default ContactUsPage;

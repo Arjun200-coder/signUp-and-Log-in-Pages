@@ -1,11 +1,13 @@
-import React, { Suspense } from 'react';
+import { Suspense } from 'react';
 import { Navigate, Routes, Route } from 'react-router-dom';
-import {
-  ProductsPage, HomePage, ContactUsPage,ServicesPage, BlogPage,
-  AboutUsPage, LoginPage, RegisterPage, ResetPasswordPage, ForgetPasswordPage
-} from './pages/About Us';
-
-import { AuthLayoutPage, ProductLayoutPage, PublicLayoutPage } from './layout/AuthLayout';
+import { ForgotPasswordPage, ResetPasswordPage, LoginPage, RegisterPage } from './pages/Auth';
+import { AboutUsPage } from './pages/AboutUs';
+import { BlogPage } from './pages/Blog';
+import { ContactUsPage } from './pages/ContactUs';
+import { HomePage } from './pages/Home';
+import { ProductsPage } from './pages/Products';
+import { ServicesPage } from './pages/Services';
+import { PublicLayoutPage } from './layout';
 
 function AppRoutes() {
   return (
@@ -14,7 +16,7 @@ function AppRoutes() {
         <Route element={<PublicLayoutPage />}>
           <Route path="Login" element={<LoginPage />} />
           <Route path="Register" element={<RegisterPage />} />
-          <Route path="Forgot-password" element={<ForgetPasswordPage />} />
+          <Route path="Forgot-password" element={<ForgotPasswordPage />} />
           <Route path="Reset-password" element={<ResetPasswordPage />} />
         </Route>
 

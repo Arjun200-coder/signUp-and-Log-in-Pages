@@ -1,4 +1,4 @@
-import React from 'react';
+import style from './styles.module.css';
 
 const blogPosts = [
   {
@@ -26,7 +26,7 @@ const blogPosts = [
 
 function BlogPage() {
   return (
-    <section className="bg-white min-h-screen py-14 px-5 md:px-10">
+    <section className={`${style.body} min-h-screen py-14 px-5 md:px-10`}>
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
           Our Blog
